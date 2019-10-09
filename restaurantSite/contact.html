@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+</head>
+<body>
+    <main>
+        <header style="text-align: center">
+            <h1>Miss Bessie's</h1>
+        </header>
+
+        <nav> 
+            <!-- this is where site navigation links will go -->
+            <hr>
+            <p style="display: inline; margin:20px"><a href="index.html">Home</a></p>
+            <p style="display: inline; margin:20px"><a href="menu.html">Menu</a></p>
+            <p style="display: inline; margin:20px"><a href="contact.html">Contact Us</a></p>
+            <hr>
+        </nav>
+
+        <section style="text-align: center">
+            <form action="submit.html" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+
+                <br />
+
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+
+                <br />
+
+                <label for="phone">Phone:</label>
+                <input type="phone" name="phone" id="phone">
+
+                <br />
+
+                <label for="reason">Reason for Inquiry</label>
+                <select name="reason" id="reason">
+                    <option value="default" selected>Catering</option>
+                    <option value="party">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <br />
+
+                <label for="info">Additional Information</label>
+                <textarea name="info" id="info"></textarea>
+
+                <br />
+
+                <label for="visited">Have you been to the restaurant?</label> 
+
+                <input type="radio" name="visited" id="choice2" value="no">
+                <label for="choice2">No</label>
+                
+                <input type="radio" name="visited" id="choice1" value="yes">
+                <label for="choice1">Yes</label>
+
+                <br />
+
+                <label for="contact">Best days to contact you:</label>
+                <input type="checkbox" name="monday" id="contact" value="monday">
+                <label for="monday">M</label>
+
+                <input type="checkbox" name="tuesday" id="contact" value="tuesday">
+                <label for="tuesday">T</label>
+                
+                <input type="checkbox" name="wednesday" id="contact" value="wednesday">
+                <label for="wednesday">W</label>
+                
+                <input type="checkbox" name="thursday" id="contact" value="thursday">
+                <label for="thursday">Th</label>
+                
+                <input type="checkbox" name="friday" id="contact" value="friday">
+                <label for="friday">F</label>
+
+                <br />
+
+                <input type="submit" name="submit" id="submit" value="Send Request">
+            </form>
+        </section>
+        
+        <footer>
+            <hr>
+            <P>1356 South Front Street, Hopkins, MN, 55343</P>
+            <p>(651)-786-7856</p>
+        </footer>
+    </main>
+    
+</body>
+</html>

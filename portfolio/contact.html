@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Contact</title>
+    </head>
+    <body>
+        <main> <!-- The main element contains all blocks on the page -->
+            <header> <!-- The header element contains only the main title at this point. -->
+                <h1>Contact Me</h1>
+            </header>
+            <nav> <!-- The nav element will include navigation buttons or links --> 
+                <hr>
+                <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
+                <p><a href="index.html">Home</a></p>
+                <hr>
+            </nav>
+            <section> <!-- The section element contains the three chunks we are using to sell ourselves in this page. -->
+                <h2>Information Request</h2>
+                <form action="submit.html" method="POST">
+                    <label for="firstName">First Name:</label><br />
+                    <input type="text" id="firstName" name="firstName"><br />
+                    
+                    <label for="lastName">Last Name:</label> <br />
+                    <input type="text" id="lastName" name="lastName"><br />
+
+                    <label for="phoneNumber">Phone Number:</label> <br />
+                    <input type="text" id="phoneNumber" name="phoneNumber"><br />
+
+                    <label for="contact"> Best time to call:</label><br />
+                    <select name="contact" id="contact">
+                        <option value="default" selected>--Select One--</option>
+                        <option value="morning">Morning (8AM - 12PM Central)</option>
+                        <option value="afternoon">Afternoon (12PM - 5PM Central)</option>
+                        <option value="evening">Evening (5PM - 8PM Central)</option>
+                    </select>
+
+                    <fieldset>
+                        <legend>I am interested in (check all that apply)</legend><br />
+                        
+                        <input type="checkbox" id="frontEnd" name="interest" value="frontEnd"> 
+                        <label for="frontEnd">Front End Web Development</label><br />
+                        
+                        <input type="checkbox" id="backEnd" name="interest" value="backEnd">
+                        <label for="backEnd">Back End Web Development</label><br />
+                        
+                        <input type="checkbox" id="database" name="interest" value="database">
+                        <label for="database">Database Design</label><br />
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>I have filled in the client questionnaire form:</legend><br />
+                        
+                        <input type="radio" name="questionnaire" id="choice1" value="yes">
+                        <label for="choice1">Yes</label><br />
+
+                        <input type="radio" name="questionnaire" id="choice2" value="no">
+                        <label for="choice2">No</label><br />
+                    </fieldset>
+                    
+                    <label for="info">Addictional Information</label><br />
+                    <textarea name="info" id="info"></textarea><br />
+                    
+                    <input type="submit" name="submit" value="submit">
+                </form>
+            </section>
+            <footer> <!-- The footer is a block at the bottom of the page. -->
+                <hr />
+                <p>&copy; 2019 Jonathan Carlton. All rights reserved.</p>
+            </footer>
+        </main>
+    </body>
+</html>
