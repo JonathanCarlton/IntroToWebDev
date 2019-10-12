@@ -2,6 +2,20 @@
 <html lang="en">
 <head>
     <title>Menu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/restaurantStyles.css">
+    <style>
+        /* use interal styles for menu */
+        .menu {
+            text-align: center;
+        }
+        thead {
+            font-weight: bold;
+        }
+        tbody tr:nth-child(odd){
+            background-color: #DADCDD;
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -11,58 +25,130 @@
 
         <nav> 
             <!-- this is where site navigation links will go -->
-            <hr>
-            <p style="display: inline; margin:20px"><a href="index.html">Home</a></p>
-            <p style="display: inline; margin:20px"><a href="menu.html">Menu</a></p>
-            <p style="display: inline; margin:20px"><a href="contact.html">Contact Us</a></p>
-            <hr>
+            <p style="display: inline; margin:20px"><a class="btn" href="index.html">Home</a></p>
+            <p style="display: inline; margin:20px"><a class="btn" href="menu.html">Menu</a></p>
+            <p style="display: inline; margin:20px"><a class="btn" href="contact.html">Contact Us</a></p>
         </nav>
+        <div class="container">
+            <div class="row menu">
+                <div class="col-lg-4">
+                    <h4><strong>Chicken Breast Sandwich</strong></h4>
+                    <p>Choice of breaded or grilled, topped with pickles and out signature house sauce. 
+                        Served with a side of waffle fries and side salad</p>
+                    <p>$10</p>
+                </div>
+                <div class="col-lg-4">
+                    <h4><strong>Soup of the Day</strong></h4>
+                    <p>Ask about or soup of the day, made fresh in house everyday day.</p>
+                    <p>$7</p>
+                </div>
+                <div class="col-lg-4">
+                    <h4><strong>Macaroni and Cheese</strong></h4>
+                    <p>Penne noodles topped with a creamy Wisconsin cheddar cheese sauce. </p>
+                    <p>$8</p>
+                </div>
+                <div class="col-lg-4">
+                    <h4><strong>Hamburger</strong></h4>
+                    <p>Made with locally sources ground beef, luttuce, tomato and pickles. 
+                        Served with a side of waffle fries and side salad</p>
+                    <p>$10</p>
+                </div>
+                <div class="col-lg-4">
+                    <h4><strong>Deluxe Cheeseburger</strong></h4>
+                    <p>Made with locally sources ground beef, topped with cheddar cheese, 
+                        crispy onions, bacon and our signature house BBQ sauce. Served with 
+                        a side of thick cut fries and southern style coleslaw</p>
+                    <p>$13</p>
+                </div>
+                <div class="col-lg-4">
+                    <h4><strong>Salmon Burger</strong></h4>
+                    <p>Season salmon patty made with fresh salmon, topped with caramelized 
+                        red onions on a brioche bun. Served with waffle fries and a side salad</p>
+                    <p>$13</p>
+                </div>
+            </div>
+            <div class="row">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>
+                                Beverages
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Root Beer
+                            </td>
+                            <td>
+                                $3.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Bottled Water
+                            </td>
+                            <td>
+                                $1.25
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Lemonade
+                            </td>
+                            <td>
+                                $1.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Iced Tea
+                            </td>
+                            <td>
+                                $1.25
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- <section >  
+                <table style="width: 100%">
+                    <caption>Lunch Menu</caption>
+                    <tr>
+                        <td style="text-align: center" width="30%">
+                            <p><strong>Chicken Breast Sandwich</strong></p>
+                            <p>Choice of breaded or grilled, topped with pickles and out signature house sauce. 
+                                Served with a side of waffle fries and side salad</p>
+                            <p>$10</p>
+                        </td>
+                        <td style="text-align: center" width="30%">
+                            
+                        </td>
+                        <td style="text-align: center" width="30%">
+                            <p><strong>Macaroni and Cheese</strong></p>
+                            <p>Penne noodles topped with a creamy Wisconsin cheddar cheese sauce. </p>
+                            <p>$8</p>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="text-align: center" width="30%">
+                            <p><strong>Hamburger</strong></p>
+                            <p>Made with locally sources ground beef, luttuce, tomato and pickles. 
+                                Served with a side of waffle fries and side salad</p>
+                            <p>$10</p>
+                        </td>
+                        <td style="text-align: center" width="30%">
 
-        <section>  
-            <table style="width: 100%">
-                <caption>Lunch Menu</caption>
-                <tr>
-                    <td style="text-align: center" width="30%">
-                        <p><strong>Chicken Breast Sandwich</strong></p>
-                        <p>Choice of breaded or grilled, topped with pickles and out signature house sauce. 
-                            Served with a side of waffle fries and side salad</p>
-                        <p>$10</p>
-                    </td>
-                    <td style="text-align: center" width="30%">
-                        <p><strong>Soup of the Day</strong></p>
-                        <p>Ask about or soup of the day, made fresh in house everyday day.</p>
-                        <p>$7</p>
-                    </td>
-                    <td style="text-align: center" width="30%">
-                        <p><strong>Macaroni and Cheese</strong></p>
-                        <p>Penne noodles topped with a creamy Wisconsin cheddar cheese sauce. </p>
-                        <p>$8</p>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <td style="text-align: center" width="30%">
-                        <p><strong>Hamburger</strong></p>
-                        <p>Made with locally sources ground beef, luttuce, tomato and pickles. 
-                            Served with a side of waffle fries and side salad</p>
-                        <p>$10</p>
-                    </td>
-                    <td style="text-align: center" width="30%">
-                        <p><strong>Deluxe Cheeseburger</strong></p>
-                        <p>Made with locally sources ground beef, topped with cheddar cheese, 
-                            crispy onions, bacon and our signature house BBQ sauce. Served with 
-                            a side of thick cut fries and southern style coleslaw</p>
-                        <p>$13</p>
-                    </td>
-                    <td style="text-align: center" width="30%">
-                        <p><strong>Salmon Burger</strong></p>
-                        <p>Season salmon patty made with fresh salmon, topped with caramelized 
-                            red onions on a brioche bun. Served with waffle fries and a side salad</p>
-                        <p>$13</p>
-                    </td>
-                </tr>
-            </table>
-        </section>
+                        </td>
+                        <td style="text-align: center" width="30%">
+
+                        </td>
+                    </tr>
+                </table>
+            </section> -->
+        </div>
         
         <footer>
             <hr>
@@ -70,6 +156,8 @@
             <p>(651)-786-7856</p>
         </footer>
     </main>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

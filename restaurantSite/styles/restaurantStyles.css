@@ -1,0 +1,33 @@
+body {
+    background-color: #EFF1F3;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #D8B4A0;
+}
+
+header h1{
+    margin: 0;
+}
+nav {
+    background-color: #D8B4A0;
+    border-top: thin #EFF1F3 solid;
+    border-bottom: thin #EFF1F3 solid;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+nav .btn {
+    background-color: #223843;
+    color: #F9DEC9;
+}
+nav .btn:visited {
+    background-color: #364A54;
+    color: #F9DEC9;
+}
+nav .btn:hover {
+    font-weight: bold;
+    background-color: #D77A61;
+    color: #223843;
+}
+

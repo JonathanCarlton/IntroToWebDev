@@ -2,37 +2,42 @@
 <html lang="en">
 <head>
     <title>Home Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/restaurantStyles.css">
+    <style>
+        
+    </style>
 </head>
 <body>
     <main>
-        <header style="text-align: center">
+        <header>
             <h1>Miss Bessie's</h1>
         </header>
 
         <nav> 
             <!-- this is where site navigation links will go -->
-            <hr>
-            <p style="display: inline; margin:20px"><a href="index.html">Home</a></p>
-            <p style="display: inline; margin:20px"><a href="menu.html">Menu</a></p>
-            <p style="display: inline; margin:20px"><a href="contact.html">Contact Us</a></p>
-            <hr>
+            <p style="display: inline; margin:20px"><a class="btn" href="index.html">Home</a></p>
+            <p style="display: inline; margin:20px"><a class="btn" href="menu.html">Menu</a></p>
+            <p style="display: inline; margin:20px"><a class="btn" href="contact.html">Contact Us</a></p>
         </nav>
 
-        <section style="text-align: center">
-            <figure>
-                <img src="/images/restaurantHeroImage-400x150.jpg" alt="hamburgers and fries">
-                <p>Restaurant Description</p>
-                <p>
-                    We are committed to uniting fresh, locally grown produce with farm-raised and wild-caught 
-                    seafood to make the freshest dishes you’ll find anywhere. Miss Bessie's has welcomed 
-                    guests to enjoy its contemporary American cuisine, warm hospitality, and unparalleled 
-                    service in Hopkins for over five years. Our rotating seasonal 
-                    menu showcases the restaurant's relationships with local farms and purveyors and is sure to 
-                    keep you coming back to try everything we have to offer.
-                </p>
-            </figure>
-
-        </section>
+        <div class="container">
+            <section style="text-align: center">
+                <figure>
+                    <img class="img-fluid" src="/images/restaurantHeroImage.jpg" alt="hamburgers and fries" style="max-width: 800px;">
+                    <h4>Restaurant Description</h4>
+                    <p>
+                        We are committed to uniting fresh, locally grown produce with farm-raised and wild-caught 
+                        seafood to make the freshest dishes you’ll find anywhere. Miss Bessie's has welcomed 
+                        guests to enjoy its contemporary American cuisine, warm hospitality, and unparalleled 
+                        service in Hopkins for over five years. Our rotating seasonal 
+                        menu showcases the restaurant's relationships with local farms and purveyors and is sure to 
+                        keep you coming back to try everything we have to offer.
+                    </p>
+                </figure>
+            </section>
+        </div>
+        
         
         <footer>
             <hr>
@@ -40,6 +45,8 @@
             <p>(651)-786-7856</p>
         </footer>
     </main>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
