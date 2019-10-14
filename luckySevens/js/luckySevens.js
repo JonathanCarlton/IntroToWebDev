@@ -8,7 +8,7 @@ function luckySevens(bet){
         document.getElementById("startingBet").value = 0.00;
     }
     else{
-        document.getElementById('bet').innerHTML ='$' + bet;
+        document.getElementById('bet').innerHTML ='<small>$</small>' + bet;
         var currentMoney = Number(bet);
         var maxMoney = currentMoney;
         var maxMoneyRolls = 0;
@@ -37,9 +37,10 @@ function luckySevens(bet){
         alert("Game Over! click 'OK' to view results")
         
         document.getElementById("totalRolls").innerHTML = numRolls;
-        document.getElementById("amountWon").innerHTML ='$' + maxMoney;
+        document.getElementById("amountWon").innerHTML ='<small>$</small>' + maxMoney;
         document.getElementById("rollAtHighestAmount").innerHTML = maxMoneyRolls;
     
         document.getElementById("results").style.visibility='visible';
+        document.getElementById("play").value = "Play Again"
     }  
 } 

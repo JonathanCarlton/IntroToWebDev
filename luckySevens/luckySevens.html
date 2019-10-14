@@ -28,7 +28,7 @@
     <div id="game">
         <form action="javascript:void(0);">
             <strong>Starting Bet <small>($)</small>: </strong><input type="number" step="0.01" name="startingBet" id="startingBet" value="0.00"><br><br>
-            <input type="submit" value="Play" onclick="luckySevens(document.getElementById('startingBet').value);"> <br><br>
+            <input type="submit" id="play" value="Play" onclick="luckySevens(document.getElementById('startingBet').value);"> <br><br>
         </form>
     </div>
     <div id="results" style="visibility: hidden;">

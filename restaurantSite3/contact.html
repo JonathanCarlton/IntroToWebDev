@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/restaurantStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Josefin+Sans:300,400|Mansalva&display=swap" rel="stylesheet">
+    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <script src="js/scripts.js"></script>
+    <style>
+        .btn-primary {
+            color: #fff;
+            background-color: #223843;
+            border-color: #24303a; 
+        }
+        .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+            color: #fff;
+            background-color: #2d4957;
+            border-color: #24303a;
+        }      
+    </style>
+</head>
+<body>
+    <noscript>
+        <div style="height: 56px; text-align:center; padding-top:20px">
+            JavaScript is not enabled. For best viewing experience please enable JavaScript in your browser.
+        </div> 
+    </noscript>
+    <main>
+        <header>
+            <h1>Miss Bessie's</h1>
+        </header>
+        <div class="jumbotron" id="news">
+            <div id="carouselControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner text-center" id="comingSoon">
+                    <div class="carousel-item">
+                        <div class="caption">
+                            <h1 class="display-2">Coming Soon</h1>
+                            <h2 class="display-4">New store opening in Eden Prarie!</h2>
+                        </div>
+                        <div class="backgroundImage" id="opening"></div>
+                    </div>
+                    <div class="carousel-item" id="fallMenu">
+                        <div class="caption">
+                            <h1 class="display-2">New Seasonal Menu - Fall 2019!</h1>
+                            <h2 class="display-4">Come in and try one of our fall favorites</h2>
+                        </div>
+                        <div class="backgroundImage" id="leaves"></div>
+                    </div>
+                    <div class="carousel-item active" id="drinkOfTheMonth">
+                        <div class="caption">
+                            <h1 class="display-2">Drink of the Month</h1>
+                            <h2 class="display-4">SG Special Brew</h2>
+                        </div>
+                        <div class="backgroundImage" id="beer"></div>
+                        <!-- <a href="#">click for more details</a> -->
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <nav> 
+            <div class="container">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><span class="oi oi-home" title="name"></span> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">    
+                        <a class="nav-link active" href="contact.html">Contact Us</a> 
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <form id="contactForm" onsubmit="return false;">
+                <div class="form-group">
+                    <label for="name" style="font-weight: bold;">Name</label>
+                    <input class="form-control" type="text" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email" style="font-weight: bold;">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" style="font-weight: bold;">Phone</label>
+                    <input class="form-control" type="text" name="phone" id="phone" placeholder="999-999-9999">
+                </div>
+                <div class="form-group">
+                    <label for="reason" style="font-weight: bold;">Reason for Inquiry</label>
+                    <select class="form-control" id="reason">
+                    <option value="default">Catering</option>
+                    <option value="party">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="visited" style="font-weight: bold;">Have you been to the restaurant?</label>
+                    <input class="from-control" type="radio" name="visited" id="choice1" value="no">
+                    <label for="choice1">No</label>
+
+                    <input class="from-control" type="radio" name="visited" id="choice2" value="yes">
+                    <label for="choice2">Yes</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact" style="font-weight: bold;">Best days to contact you: </label>
+                    <input class="from-control" type="checkbox" name="monday" id="monday" value="monday">
+                    <label for="monday">M</label>
+
+                    <input class="from-control" type="checkbox" name="tuesday" id="tuesday" value="tuesday">
+                    <label for="monday">T</label>
+
+                    <input class="from-control" type="checkbox" name="wednesday" id="wednesday" value="wednesday">
+                    <label for="monday">W</label>
+
+                    <input class="from-control" type="checkbox" name="thursday" id="thursday" value="thursday">
+                    <label for="monday">TH</label>
+
+                    <input class="from-control" type="checkbox" name="friday" id="friday" value="friday">
+                    <label for="friday">F</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="info">Additional Information</label>
+                    <textarea class="form-control" id="info" rows="3"></textarea>
+                </div>
+
+                <button class="btn btn-primary" id="submitButton" onclick="validateForm();">Submit</button>
+            </div>
+        
+        <footer>
+            <hr>
+            <P>1356 South Front Street, Hopkins, MN, 55343</P>
+            <p>(651)-786-7856</p>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

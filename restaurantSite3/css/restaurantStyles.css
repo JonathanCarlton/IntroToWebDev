@@ -1,0 +1,140 @@
+/* 
+font-family: 'Mansalva', cursive;
+font-family: 'Crimson Text', serif;
+font-family: 'Josefin Sans', sans-serif;
+ */
+
+body {
+    background-color: #EFF1F3;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #D8B4A0;
+}
+
+footer p{
+    margin: 0;
+}
+
+header h1{
+    margin: 0;
+    font-size: 3.5em;
+    font-family: 'Mansalva', cursive;
+    padding: 10px 0px 10px 0px;;
+}
+nav {
+    background-color: #D8B4A0;
+    border-top: thin #EFF1F3 solid;
+    border-bottom: thin #EFF1F3 solid;
+    padding-top: 12px;
+    padding-bottom: 0;
+
+}
+
+nav .btn {
+    background-color: #223843;
+    color: #F9DEC9;
+}
+nav .btn:visited {
+    background-color: #364A54;
+    color: #F9DEC9;
+}
+nav .btn:hover {
+    font-weight: bold;
+    background-color: #D77A61;
+    color: #223843;
+}
+
+nav > .container {
+    margin-top: 0;
+}
+.jumbotron {
+    background-color: #D8B4A0;
+    height: 500px;
+    padding: 0;
+    margin: 0;
+    border-top: thin #EFF1F3 solid;
+}
+
+.carousel-item {
+    height: 500px;
+}
+.caption{
+    color: rgb(236, 236, 236);
+    text-shadow: 2px 2px #424242;
+    padding: 10% 5% 10% 5%;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    z-index: 2;
+}
+
+.backgroundImage {
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    z-index: 1;
+}
+#beer{
+    background-image: url("/images/beer-980x500.jpg");
+}
+
+#opening{
+    background-image: url("/images/opening1294x500.jpg");
+}
+
+#leaves{
+    background-image: url("/images/leaves800x533.jpg");
+}
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 3;
+}
+
+#drinkOfTheMonth > h1{
+    z-index: 2;
+}
+#carouselControls, #comingSoon {
+    height: 500px;
+}
+
+.nav-link.active {
+    background-color: #EFF1F3 !important;
+}
+
+.nav-item{
+    width: 25%;
+    text-align: center;
+}
+
+.nav-item a:link{
+    margin-bottom: 1px;
+    background-color: #223843;
+}
+.nav-item a:hover{
+    font-weight: bold;
+}
+
+.nav-item a{
+    background-color: #223843;
+    color: #EFF1F3;
+    margin: 2px;
+}
+
+.nav-item a:visited{
+    background-color: #3a474e;;
+}
+
+#description {
+    margin-top: 1rem;
+}
+
+.container {
+    margin-top: 4rem;
+}
